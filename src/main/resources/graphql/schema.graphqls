@@ -1,0 +1,13 @@
+type Query{
+    infractions: [Infraction],
+    infractionById (id:ID) : Infraction
+}
+type Infraction {
+    id : ID,
+    date : String,
+    numRadar: Int,
+    marticule_vehicule: String,
+    vitesse_vehicule: Float,
+    vitesseMax: Float,
+    montant: Float
+}
